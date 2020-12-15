@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #02171f;
+  color: whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar img {
+  height: 25px;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form.search input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #57e1ed;
+  border-radius: 5px;
+  width: 100%;
+  background: #032532;
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+input,
+select,
+textarea {
+  color: whitesmoke;
+}
+
+.total-count {
+  margin-top: 10px;
+  color: #57e1ed;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  height: 400px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #e5e5e5;
+  color: #032532;
+}
+
+@media (max-width: 700px) {
+  .card-image img {
+    height: 190px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-content {
+    font-size: 11px;
+    justify-content: space-around;
+  }
+}
