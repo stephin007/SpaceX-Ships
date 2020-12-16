@@ -14,7 +14,7 @@ export default function App(props) {
   const [loading, setLoading] = useState(true);
 
   const fetchShips = async () => {
-    const response = await request(gql`
+     await request(gql`
       {
         ships {
           name
